@@ -8,7 +8,16 @@ address = (input("Which city do you want to get the weather for? "))
 geolocator = Nominatim(user_agent="N")
 location = geolocator.geocode(address)
   
-print(f"You've asked to see the weather in {location}.")
+# Check if city pulled is the correct one and if not, add country to lat/long request
+correct = input("Is this correct? Y/N \n").upper().strip()
+while correct != "Y" and correct != "N":
+  correct = input("Please input either Y or N to continue. \n").upper().strip()
+if correct == "Y":
+  pass
+elif correct == "N":
+  country = input("What country is your city in? ")
+  location = geolocator.geocode(address + "," + country)
+
 #print(location.address)
 #print((location.latitude, location.longitude))
 

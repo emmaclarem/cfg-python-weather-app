@@ -1,6 +1,6 @@
 ## Must:
 - [x] Accept a city name as input from the user
-- [ ] Allow user to specify a country if there are multiple cities with the same name
+- [x] Allow user to specify a country if there are multiple cities with the same name
 - [ ] Sanitize user input (the geolocator seems to do this automatically, test further to see if we need to add our own)
 - [x] Convert user input string into latitude and longitude
 - [x] Create a function that makes a request to the API with the requested location as part of the search query
