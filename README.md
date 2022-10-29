@@ -9,9 +9,9 @@
 
 ## Should:
 - [x] Covert weather code into real weather value as a string
-- [ ] Make the code into a function so it can be reused to get multiple locations without resetting
-- [ ] Error handling in case the user inputs gibberish or anything that's not a real city/country
-- [ ] Handle inputs to the Y/N questions that aren't Y or N
+- [x] Make the code into a function so it can be reused to get multiple locations without resetting
+- [x] Error handling in case the user inputs gibberish or anything that's not a real city/country
+- [x] Handle inputs to the Y/N questions that aren't Y or N
 
 ## Could:
 - [ ] Create a visual interface for input and to display the weather data
