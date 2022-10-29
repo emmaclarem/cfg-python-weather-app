@@ -8,7 +8,7 @@
 - [x] Display the weather from the inputted location
 
 ## Should:
-- [ ] Covert weather code into real weather value as a string
+- [x] Covert weather code into real weather value as a string
 - [ ] Make the code into a function so it can be reused to get multiple locations without resetting
 - [ ] Error handling in case the user inputs gibberish or anything that's not a real city/country
 - [ ] Handle inputs to the Y/N questions that aren't Y or N
