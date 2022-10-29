@@ -1,22 +1,30 @@
-## Must:
+![cfgpythonheaderimage](https://user-images.githubusercontent.com/104512014/198839753-d1895769-875c-424c-bf50-bd40164fd41c.jpg)
+
+![img](https://img.shields.io/badge/status-in%20progress-ff69b4) ![img2](https://badgen.net/pypi/python/black)
+
+## About
+This is my final project for the Code First Girls Python & Apps Kickstarter course, built in collaboration with my teammates Nicolette Bell and Anna Kukla. Team Duck! 🦆
+
+## The project must:
 - [x] Accept a city name as input from the user
 - [x] Allow user to specify a country if there are multiple cities with the same name
 - [ ] Sanitize user input (the geolocator seems to do this automatically, test further to see if we need to add our own)
 - [x] Convert user input string into latitude and longitude
-- [x] Create a function that makes a request to the API with the requested location as part of the search query
+- [x] Make a request to the API with the requested location's latitude and longitude as part of the search query
 - [x] Get the returned values from the API response
 - [x] Display the weather from the inputted location
 
-## Should:
+## The project should:
 - [x] Covert weather code into real weather value as a string
-- [x] Make the code into a function so it can be reused to get multiple locations without resetting
-- [x] Error handling in case the user inputs gibberish or anything that's not a real city/country
+- [x] Be a reusable function so it can be re-run to get multiple locations without ending and restarting 
+- [x] Handle user inputs that are not a real city/country or are gibberish
 - [x] Handle inputs to the Y/N questions that aren't Y or N
 
-## Could:
-- [ ] Create a visual interface for input and to display the weather data
-- [ ] Ducks? 🦆
+## The project could:
+- [ ] Have a web-based visual interface for input and to display the weather data
 - [ ] Allow a 'random' request to pull any city
+- [ ] Have ducks? 🦆
+
 
 
 
