@@ -6,15 +6,15 @@ from emoji import emojize
 import geonamescache
 import random
 
-#set up random call
+# Set up random cities call
 gc = geonamescache.GeonamesCache()
-cities=gc.get_cities()
+cities = gc.get_cities()
 
 def get_weather():
   # Get user input, then turn input from city name into latitude & longitude to be used in API call
   address = (input("Which city do you want to get the weather for? ").lower().strip())
-  random_city = "No"
-  if address == "surprise me":
+  # If user asks for a random city, generate one
+  if address == "surprise me" or address == "surprise me!":
     random_city = "Yes"
     randint = random.choice(tuple(cities))
     address = cities[randint]['name']
@@ -103,14 +103,14 @@ def get_weather():
 
   # If there is a valid weathercode value and a significant windspeed, print them both
   if weathercondition != "none" and weather["current_weather"][
-      "windspeed"] > 0.5:
+      "windspeed"] > 2:
     print(
       f"The conditions there are currently {weathercondition}, with winds of up to "
       + str(weather["current_weather"]["windspeed"]) + "mph. \n")
 
   # If there is a valid weathercode value but no significant windspeed, print this
   elif weathercondition != "none" and weather["current_weather"][
-      "windspeed"] <= 0.5:
+      "windspeed"] <= 2:
     print(
       f"The conditions there are currently {weathercondition}, with no wind.")
 
