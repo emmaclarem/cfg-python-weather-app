@@ -13,6 +13,7 @@ cities = gc.get_cities()
 def get_weather():
   # Get user input, then turn input from city name into latitude & longitude to be used in API call
   address = (input("Which city do you want to get the weather for? ").lower().strip())
+  random_city = "No"
   # If user asks for a random city, generate one
   if address == "surprise me" or address == "surprise me!":
     random_city = "Yes"
@@ -126,11 +127,17 @@ run_again = "Y"
 while run_again == "Y":
   get_weather()
   run_again = input(
-    "Would you like to see the weather for another location? Y/N \n").upper(
-    ).strip()
+    "Would you like to see the weather for another location? Y/N \n").upper().strip()
   while run_again != "Y" and run_again != "N":
-    run_again = input(
-      "Please enter either Y or N to continue. \n").upper().strip()
+    run_again = input("Please enter either Y or N to continue. \n").upper().strip()
 
 print("Thanks for using our weather app, have some ducks!",
       emojize(":duck:") * 100)
+
+more_ducks = "Y"
+while more_ducks == "Y":
+  more_ducks = input("Would you like to see more ducks? Y/N \n").upper().strip()
+  while run_again != "Y" and run_again != "N":
+    more_ducks = input("Please enter either Y or N to continue. \n").upper().strip()
+  print(emojize(":duck:") * 50)
+print("You're wrong, there's no such thing as too many ducks. Goodbye.")
