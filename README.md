@@ -9,7 +9,7 @@ Team Duck! 🦆🦆🦆
 ## The project must:
 - [x] Accept a city name as input from the user
 - [x] Allow user to specify a country if there are multiple cities with the same name
-- [x] Sanitize user input (the geolocator seems to do this automatically, test further to see if we need to add our own)
+- [x] Sanitize user input 
 - [x] Convert user input string into latitude and longitude
 - [x] Make a request to the API with the requested location's latitude and longitude as part of the search query
 - [x] Get the returned values from the API response
@@ -23,7 +23,7 @@ Team Duck! 🦆🦆🦆
 
 ## The project could:
 - [ ] Have a web-based visual interface for input and to display the weather data
-- [ ] Allow a 'random' request to pull any city
+- [x] Allow a 'random' request to pull any city
 - [x] Have ducks? 🦆
 
 
