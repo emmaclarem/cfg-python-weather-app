@@ -33,8 +33,7 @@ def get_weather():
   if random_city == "No":
     correct = input("Is this correct? Y/N \n").upper().strip()
     while correct != "Y" and correct != "N":
-      correct = input(
-        "Please input either Y or N to continue. \n").upper().strip()
+      correct = input("Please input either Y or N to continue. \n").upper().strip()
     if correct == "Y":
       pass
     elif correct == "N":
@@ -99,35 +98,27 @@ def get_weather():
     weathercondition = "none"
 
   # Print the current temperature
-  print("The current temperature there is: " +
-        str(weather["current_weather"]["temperature"]) + u"\u2103" + " .")
+  print("The current temperature there is: " + str(weather["current_weather"]["temperature"]) + u"\u2103" + " .")
 
   # If there is a valid weathercode value and a significant windspeed, print them both
-  if weathercondition != "none" and weather["current_weather"][
-      "windspeed"] > 2:
+  if weathercondition != "none" and weather["current_weather"]["windspeed"] > 2:
     print(
-      f"The conditions there are currently {weathercondition}, with winds of up to "
-      + str(weather["current_weather"]["windspeed"]) + "mph. \n")
+      f"The conditions there are currently {weathercondition}, with winds of up to " + str(weather["current_weather"]["windspeed"]) + "mph. \n")
 
   # If there is a valid weathercode value but no significant windspeed, print this
-  elif weathercondition != "none" and weather["current_weather"][
-      "windspeed"] <= 2:
-    print(
-      f"The conditions there are currently {weathercondition}, with no wind.")
+  elif weathercondition != "none" and weather["current_weather"]["windspeed"] <= 2:
+    print(f"The conditions there are currently {weathercondition}, with no wind.")
 
   # Error handling in case anything goes wrong with the weathercode
   else:
-    print(
-      "I'm sorry, we couldn\'t find the weather conditions for that location. \n"
-    )
+    print("I'm sorry, we couldn\'t find the weather conditions for that location. \n")
 
 
 # Function call to run the get_weather code while run_again is set to Y (yes)
 run_again = "Y"
 while run_again == "Y":
   get_weather()
-  run_again = input(
-    "Would you like to see the weather for another location? Y/N \n").upper().strip()
+  run_again = input("Would you like to see the weather for another location? Y/N \n").upper().strip()
   while run_again != "Y" and run_again != "N":
     run_again = input("Please enter either Y or N to continue. \n").upper().strip()
 
