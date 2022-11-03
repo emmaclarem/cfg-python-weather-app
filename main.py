@@ -1,6 +1,8 @@
 import geopy
 from geopy.geocoders import Nominatim
 import requests
+import emoji
+from emoji import emojize
 
 def get_weather():
   # Get user input, then turn input from city name into latitude & longitude to be used in API call
@@ -110,5 +112,5 @@ while run_again == "Y":
   while run_again != "Y" and run_again != "N":
     run_again = input("Please enter either Y or N to continue. \n").upper().strip()
 
-print("Clever goodbye/thank you message here. Maybe some ducks?")
+print("Thanks for using our weather app, have some ducks!", emojize(":duck:") * 150)
 
