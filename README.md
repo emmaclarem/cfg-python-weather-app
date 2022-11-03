@@ -3,7 +3,8 @@
 ![img](https://img.shields.io/badge/status-in%20progress-ff69b4) ![img2](https://badgen.net/pypi/python/black)
 
 ## About
-This is my final project for the Code First Girls Python & Apps Kickstarter course, built in collaboration with my teammates Nicolette Bell and Anna Kukla. Team Duck! 🦆
+This is my final project for the Code First Girls Python & Apps Kickstarter course, built in collaboration with my teammate [Nicolette Bell](https://github.com/nicolettebell).  
+Team Duck! 🦆🦆🦆
 
 ## The project must:
 - [x] Accept a city name as input from the user
