@@ -26,7 +26,11 @@ Team Duck! 🦆🦆🦆
 - [x] Allow a 'random' request to pull any city
 - [x] Have ducks? 🦆
 
-
+## Reflection
+1. Give a brief explanation of an interesting piece of code in the project.
+2. What's one thing that you learned during the project?
+3. Wat was a difficult part of the project that you solved?
+4. What would you do if you had more time on the project?
 
 
 
