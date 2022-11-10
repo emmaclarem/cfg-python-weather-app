@@ -27,6 +27,8 @@ Team Duck! 🦆🦆🦆
 - [x] Have ducks? 🦆
 
 ## Reflection
+1. What was the original plan for the project?
+2. What does the project actually do?
 1. Give a brief explanation of an interesting piece of code in the project.
 2. What's one thing that you learned during the project?
 3. Wat was a difficult part of the project that you solved?
