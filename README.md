@@ -47,7 +47,7 @@ except AttributeError:
 ```
 This code tries to run the intended output, but if the API returns an AttributeError it will exit the reusable part of the function and ask if you want to see another location, starting the whole flow again. 
 ### 7. What's one thing that you learned during the project?
-Our biggest takeaway from this project was learning how to use APIs. Figuring out what data we wanted from the returned JSON files and how to access those particular bits, especially when data we wanted was in nested dictionaries, was a great learning experience. 
+Our biggest takeaway from this project was learning how to use APIs. Figuring out what data we wanted from the returned JSON files and how to access those particular bits, especially when data we wanted was in nested dictionaries, was a great learning experience. We also built in a lot of redundancies and error handling to try to keep the user in the flow of the code, whether their input was expected or unexpected. 
 ### 8. What was a difficult part of the project that you solved?
 Adding in the option to generate a random city was unexpectedly difficult. First we had to find another API from which to get a list of city names to randomly pull from. Once we had that generating a random city, we realized that we needed to swap around loads of different code snippets to alter the control flow to get it to work as intended. Far more complex than we'd anticipated! 
 ### 9. What would you do if you had more time on the project?
