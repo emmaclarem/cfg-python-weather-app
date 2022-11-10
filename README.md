@@ -20,6 +20,7 @@ Team Duck! 🦆🦆🦆
 - [x] Be a reusable function so it can be re-run to get multiple locations without ending and restarting 
 - [x] Handle user inputs that are not a real city/country or are gibberish
 - [x] Handle inputs to the Y/N questions that aren't Y or N
+- [x] Allow the user to specify a country if they enter a city name which is present in more than one country
 
 ## The project could:
 - [ ] Have a web-based visual interface for input and to display the weather data
@@ -33,6 +34,7 @@ A simple weather app that could take user input for a city, and then grab the re
 We completed the original plan, and then added several additional features. These include:
 - being a reusable function so the code can be re-run to get multiple locations without ending and restarting 
 - handling user inputs that are not a real city/country or are gibberish
+- allowing the user to specify a country if they enter a city name which is present in more than one country
 - handling inputs to the Y/N questions that aren't Y or N
 - having a 'random' request that pulls a random city
 - added duck emojis
